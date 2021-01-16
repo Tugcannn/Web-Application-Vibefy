@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactAudioPlayer from 'react-audio-player';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import CardContent from '@material-ui/core/CardContent';
 import Card from '@material-ui/core/Card';
@@ -8,6 +9,17 @@ import Typography from '@material-ui/core/Typography';
 import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import SkipNextIcon from '@material-ui/icons/SkipNext';
+
+import Macklemore from '../../src/assets/images/png/Macklemore.jpg';
+import PharrellWilliams from '../../src/assets/images/png/pharrell_williams.jpg';
+import ManuşBaba from '../../src/assets/images/png/manuşbaba.jpg';
+import MurdaandEzhel from '../../src/assets/images/png/ezel_murda.png';
+
+import Cant from '../../src/assets/musics/cantholdus.mp4';
+import happyx from '../../src/assets/musics/happy.mp4';
+import EteğiBelinde from '../../src/assets/musics/etegibelinde.mp4';
+import Aya from '../../src/assets/musics/aya.mp4';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -21,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
       flex: '1 0 auto',
     },
     cover: {
-      width: 151,
+      width: 150,
     },
     controls: {
       display: 'flex',
@@ -29,10 +41,7 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft: theme.spacing(1),
       paddingBottom: theme.spacing(1),
     },
-    playIcon: {
-      height: 38,
-      width: 38,
-    },
+   
   }));
 
 function Happy() {
@@ -47,27 +56,19 @@ function Happy() {
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                            Can't Hold Us feat.Ray Dalton
+                            Can't Hold Us 
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
                             Macklemore and Ryan Lewis
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
-                            <IconButton aria-label="previous">
-                                {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
-                            </IconButton>
-                            <IconButton aria-label="play/pause">
-                                <PlayArrowIcon className={classes.playIcon} />
-                            </IconButton>
-                            <IconButton aria-label="next">
-                                {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
-                            </IconButton>
+                        <ReactAudioPlayer src={Cant}  controls/>     
                         </div>
                     </div>
                     <CardMedia
                         className={classes.cover}
-                        image="/static/images/cards/live-from-space.jpg"
+                        image= {Macklemore}
                         title="Live from space album cover"
                     />
                 </Card>
@@ -85,20 +86,12 @@ function Happy() {
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
-                            <IconButton aria-label="previous">
-                                {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
-                            </IconButton>
-                            <IconButton aria-label="play/pause">
-                                <PlayArrowIcon className={classes.playIcon} />
-                            </IconButton>
-                            <IconButton aria-label="next">
-                                {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
-                            </IconButton>
+                        <ReactAudioPlayer src={happyx}  controls/>     
                         </div>
                     </div>
                     <CardMedia
                         className={classes.cover}
-                        image="/static/images/cards/live-from-space.jpg"
+                        image= {PharrellWilliams}
                         title="Live from space album cover"
                     />
                 </Card>
@@ -116,20 +109,12 @@ function Happy() {
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
-                            <IconButton aria-label="previous">
-                                {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
-                            </IconButton>
-                            <IconButton aria-label="play/pause">
-                                <PlayArrowIcon className={classes.playIcon} />
-                            </IconButton>
-                            <IconButton aria-label="next">
-                                {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
-                            </IconButton>
+                        <ReactAudioPlayer src={EteğiBelinde}  controls/>     
                         </div>
                     </div>
                     <CardMedia
                         className={classes.cover}
-                        image="/static/images/cards/live-from-space.jpg"
+                        image= {ManuşBaba}
                         title="Live from space album cover"
                     />
                 </Card>
@@ -147,20 +132,12 @@ function Happy() {
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
-                            <IconButton aria-label="previous">
-                                {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
-                            </IconButton>
-                            <IconButton aria-label="play/pause">
-                                <PlayArrowIcon className={classes.playIcon} />
-                            </IconButton>
-                            <IconButton aria-label="next">
-                                {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
-                            </IconButton>
+                        <ReactAudioPlayer src={Aya}  controls/>     
                         </div>
                     </div>
                     <CardMedia
                         className={classes.cover}
-                        image="/static/images/cards/live-from-space.jpg"
+                        image= {MurdaandEzhel}
                         title="Live from space album cover"
                     />
                 </Card>

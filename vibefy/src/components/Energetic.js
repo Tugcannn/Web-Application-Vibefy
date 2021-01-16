@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactAudioPlayer from 'react-audio-player';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import CardContent from '@material-ui/core/CardContent';
 import Card from '@material-ui/core/Card';
@@ -8,6 +9,18 @@ import Typography from '@material-ui/core/Typography';
 import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import SkipNextIcon from '@material-ui/icons/SkipNext';
+
+import ÖmerFarukBostan from '../../src/assets/images/png/ömer faruk bostan.jpg';
+import Manga from '../../src/assets/images/png/manga.jpg';
+import DuaLipa from '../../src/assets/images/png/dua lipa.jpg';
+import Pendulum from '../../src/assets/images/png/pendulum.jpg';
+
+import ErikDali from '../../src/assets/musics/erikdali.mp3';
+import WeCouldBeTheSame from '../../src/assets/musics/we could be the same.mp3';
+import NewRules from '../../src/assets/musics/NewRules.mp3';
+import Witchcraft from '../../src/assets/musics/Witchcraft.mp3';
+
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -29,10 +42,7 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft: theme.spacing(1),
       paddingBottom: theme.spacing(1),
     },
-    playIcon: {
-      height: 38,
-      width: 38,
-    },
+   
   }));
 
 function Energetic() {
@@ -54,20 +64,12 @@ function Energetic() {
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
-                            <IconButton aria-label="previous">
-                                {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
-                            </IconButton>
-                            <IconButton aria-label="play/pause">
-                                <PlayArrowIcon className={classes.playIcon} />
-                            </IconButton>
-                            <IconButton aria-label="next">
-                                {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
-                            </IconButton>
+                        <ReactAudioPlayer src={ErikDali}  controls/>  
                         </div>
                     </div>
                     <CardMedia
                         className={classes.cover}
-                        image="/static/images/cards/live-from-space.jpg"
+                        image= {ÖmerFarukBostan}
                         title="Live from space album cover"
                     />
                 </Card>
@@ -85,20 +87,12 @@ function Energetic() {
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
-                            <IconButton aria-label="previous">
-                                {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
-                            </IconButton>
-                            <IconButton aria-label="play/pause">
-                                <PlayArrowIcon className={classes.playIcon} />
-                            </IconButton>
-                            <IconButton aria-label="next">
-                                {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
-                            </IconButton>
+                        <ReactAudioPlayer src={Witchcraft}  controls/>  
                         </div>
                     </div>
                     <CardMedia
                         className={classes.cover}
-                        image="/static/images/cards/live-from-space.jpg"
+                        image= {Pendulum}
                         title="Live from space album cover"
                     />
                 </Card>
@@ -116,20 +110,12 @@ function Energetic() {
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
-                            <IconButton aria-label="previous">
-                                {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
-                            </IconButton>
-                            <IconButton aria-label="play/pause">
-                                <PlayArrowIcon className={classes.playIcon} />
-                            </IconButton>
-                            <IconButton aria-label="next">
-                                {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
-                            </IconButton>
+                        <ReactAudioPlayer src={WeCouldBeTheSame}  controls/>  
                         </div>
                     </div>
                     <CardMedia
                         className={classes.cover}
-                        image="/static/images/cards/live-from-space.jpg"
+                        image= {Manga}
                         title="Live from space album cover"
                     />
                 </Card>
@@ -147,20 +133,12 @@ function Energetic() {
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
-                            <IconButton aria-label="previous">
-                                {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
-                            </IconButton>
-                            <IconButton aria-label="play/pause">
-                                <PlayArrowIcon className={classes.playIcon} />
-                            </IconButton>
-                            <IconButton aria-label="next">
-                                {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
-                            </IconButton>
+                        <ReactAudioPlayer src={NewRules}  controls/>  
                         </div>
                     </div>
                     <CardMedia
                         className={classes.cover}
-                        image="/static/images/cards/live-from-space.jpg"
+                        image= {DuaLipa}
                         title="Live from space album cover"
                     />
                 </Card>

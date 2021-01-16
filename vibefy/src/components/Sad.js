@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactAudioPlayer from 'react-audio-player';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import CardContent from '@material-ui/core/CardContent';
 import Card from '@material-ui/core/Card';
@@ -9,33 +10,42 @@ import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import SkipNextIcon from '@material-ui/icons/SkipNext';
 
+import mehmeterdem from '../../src/assets/images/png/mehmet-erdem.jpg';
+import Cem_Karaca from '../../src/assets/images/png/Cem_Karaca.jpg';
+import muslumgurses from '../../src/assets/images/png/muslumgurses.jpg';
+import paul_dwyer from '../../src/assets/images/png/paul_dwyer.jpg';
+
+
+import herkesaynihayatta from '../../src/assets/musics/herkesaynihayatta.mp3';
+import odamkirec from '../../src/assets/musics/odamkirec.mp3';
+import nilüfer from '../../src/assets/musics/nilüfer.mp3';
+import denizüstüköpürür from '../../src/assets/musics/denizüstüköpürür.mp3';
+
+
 const useStyles = makeStyles((theme) => ({
     root: {
-      display: 'flex',
+        display: 'flex',
     },
     details: {
-      display: 'flex',
-      flexDirection: 'column',
+        display: 'flex',
+        flexDirection: 'column',
     },
     content: {
-      flex: '1 0 auto',
+        flex: '1 0 auto',
     },
     cover: {
-      width: 151,
+        width: 150,
     },
     controls: {
-      display: 'flex',
-      alignItems: 'center',
-      paddingLeft: theme.spacing(1),
-      paddingBottom: theme.spacing(1),
+        display: 'flex',
+        alignItems: 'center',
+        paddingLeft: theme.spacing(1),
+        paddingBottom: theme.spacing(1),
     },
-    playIcon: {
-      height: 38,
-      width: 38,
-    },
-  }));
+}));
 
 function Sad() {
+
 
     const classes = useStyles();
     const theme = useTheme();
@@ -47,27 +57,22 @@ function Sad() {
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                                Dalgalandım Da Duruldum
+                                Herkes Aynı Hayatta
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
-                                Müzeyyen Senar
+                                Mehmet Erdem
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
-                            <IconButton aria-label="previous">
-                                {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
-                            </IconButton>
-                            <IconButton aria-label="play/pause">
-                                <PlayArrowIcon className={classes.playIcon} />
-                            </IconButton>
-                            <IconButton aria-label="next">
-                                {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
-                            </IconButton>
+                           
+                        <ReactAudioPlayer src={herkesaynihayatta}  controls/>     
+                           
                         </div>
                     </div>
                     <CardMedia
                         className={classes.cover}
-                        image="/static/images/cards/live-from-space.jpg"
+
+                        image={mehmeterdem}
                         title="Live from space album cover"
                     />
                 </Card>
@@ -85,20 +90,12 @@ function Sad() {
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
-                            <IconButton aria-label="previous">
-                                {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
-                            </IconButton>
-                            <IconButton aria-label="play/pause">
-                                <PlayArrowIcon className={classes.playIcon} />
-                            </IconButton>
-                            <IconButton aria-label="next">
-                                {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
-                            </IconButton>
+                        <ReactAudioPlayer src={odamkirec} controls/>     
                         </div>
                     </div>
                     <CardMedia
                         className={classes.cover}
-                        image="/static/images/cards/live-from-space.jpg"
+                        image={Cem_Karaca}
                         title="Live from space album cover"
                     />
                 </Card>
@@ -116,20 +113,12 @@ function Sad() {
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
-                            <IconButton aria-label="previous">
-                                {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
-                            </IconButton>
-                            <IconButton aria-label="play/pause">
-                                <PlayArrowIcon className={classes.playIcon} />
-                            </IconButton>
-                            <IconButton aria-label="next">
-                                {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
-                            </IconButton>
+                        <ReactAudioPlayer src={nilüfer} controls/>     
                         </div>
                     </div>
                     <CardMedia
                         className={classes.cover}
-                        image="/static/images/cards/live-from-space.jpg"
+                        image={muslumgurses}
                         title="Live from space album cover"
                     />
                 </Card>
@@ -146,26 +135,19 @@ function Sad() {
                                 Paul Dwyer
                             </Typography>
                         </CardContent>
-                        <div className={classes.controls}>
-                            <IconButton aria-label="previous">
-                                {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
-                            </IconButton>
-                            <IconButton aria-label="play/pause">
-                                <PlayArrowIcon className={classes.playIcon} />
-                            </IconButton>
-                            <IconButton aria-label="next">
-                                {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
-                            </IconButton>
+                        <div className={classes.controls}>                                        
+                            <ReactAudioPlayer src={denizüstüköpürür}  controls/>                                                                              
                         </div>
                     </div>
                     <CardMedia
                         className={classes.cover}
-                        image="/static/images/cards/live-from-space.jpg"
+                        image={paul_dwyer}
+                       
                         title="Live from space album cover"
                     />
                 </Card>
             </div>
-        </div>    
+        </div>
     );
 }
 
