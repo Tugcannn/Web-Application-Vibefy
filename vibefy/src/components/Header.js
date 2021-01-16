@@ -2,13 +2,14 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import HeadsetIcon from '@material-ui/icons/Headset';
+import '../App.css';
 
 class Header extends React.Component
 {
     constructor(props)
     {
         super(props)
-
     }
 
     render()
@@ -16,7 +17,7 @@ class Header extends React.Component
         return (
             <Navbar bg="dark" variant="dark">
                 <Navbar.Brand href="/home"><i>VIBEFY</i></Navbar.Brand>
-                <Nav className="mr-auto"></Nav>
+                <Nav className="mr-auto"><HeadsetIcon className="headphone"></HeadsetIcon></Nav>
                 <Nav className="ms-auto">
                     <NavDropdown title="Moods" id="basic-nav-dropdown">
                         <NavDropdown.Item href="/happy"><i>Happy</i></NavDropdown.Item>
