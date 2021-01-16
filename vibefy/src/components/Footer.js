@@ -8,39 +8,39 @@ function Footer() {
                 <div className="row">
                     {/*Column 1*/}
                     <div className="col-sm-4">
-                        <h4>VIBEFY</h4>
+                        <h4><i>VIBEFY</i></h4>
                         <ul className="list-unstyled">
-                            <li>Web Application with React JS</li>
-                            <li>Istanbul, Turkey</li>
-                            <li>Ozyegin University</li>
-                            <li>CS 391</li>
+                            <li><i>Web Application with React JS</i></li>
+                            <li><i>Istanbul, Turkey</i></li>
+                            <li><i>Ozyegin University</i></li>
+                            <li><i>Web Application Development Course</i></li>
                         </ul>
                     </div>
                     {/*Column 2*/}
                     <div className="col-sm-4">
-                        <h4>Developers</h4>
+                        <h4><i>Developers</i></h4>
                         <ul className="list-unstyled">
-                            <li>Tuna Tuncer</li>
-                            <li>Onur Alaçam</li>
-                            <li>Uygar Kaya</li>
-                            <li>Tuğcan Hoşer</li>
+                            <li><i>Tuna Tuncer</i></li>
+                            <li><i>Onur Alaçam</i></li>
+                            <li><i>Uygar Kaya</i></li>
+                            <li><i>Tuğcan Hoşer</i></li>
                         </ul>
                     </div>
 
                     <div className="col-sm-4">
-                        <h4>E-Mails</h4>
+                        <h4><i>E-Mails</i></h4>
                         <ul className="list-unstyled">
-                            <li>tuna.tuncer@ozu.edu.tr</li>
-                            <li>onur.alacam@ozu.edu.tr</li>
-                            <li>uygar.kaya@ozu.edu.tr</li>
-                            <li>tugcan.hoser@ozu.edu.tr</li>
+                            <li><i>tuna.tuncer@ozu.edu.tr</i></li>
+                            <li><i>onur.alacam@ozu.edu.tr</i></li>
+                            <li><i>uygar.kaya@ozu.edu.tr</i></li>
+                            <li><i>tugcan.hoser@ozu.edu.tr</i></li>
                         </ul>
                     </div>
                     
                 </div>
                 <div className="row">
                     <p className="col-sm-12">
-                        &copy;{new Date().getFullYear()} VIBEFY | All rights reserved 
+                    <i>Created By &copy;&nbsp;{new Date().getFullYear()} <i>VIBEFY</i> | All rights reserved</i> 
                     </p>
                 </div>
             </div>

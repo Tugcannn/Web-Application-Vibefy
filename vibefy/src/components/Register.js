@@ -32,27 +32,27 @@ render() {
         <div className="col-sm-12">
         <Form onSubmit = {this.submitHandler}>
             <Form.Group controlId="formBasicText">
-                <Form.Label>Username</Form.Label>
+                <Form.Label><i>Username</i></Form.Label>
                 <Form.Control type="text" placeholder="Enter username" name = "username" value = {username} required minLength = "5" onChange = {this.changeHandler}/>
             </Form.Group>
             <Form.Group controlId="formBasicPassword">
-                <Form.Label>Password</Form.Label>
+                <Form.Label><i>Password</i></Form.Label>
                 <Form.Control type="password" placeholder="Password" name = "password" value = {password}  required minLength = "8" onChange = {this.changeHandler}/>
             </Form.Group>
             <Form.Group controlId="formBasicText">
-                <Form.Label>Name</Form.Label>
+                <Form.Label><i>Name</i></Form.Label>
                 <Form.Control type="text" placeholder="Name" name = "name" value = {name}  required onChange = {this.changeHandler}/>
             </Form.Group>
             <Form.Group controlId="formBasicEmail">
-                <Form.Label>Email</Form.Label>
+                <Form.Label><i>E-mail</i></Form.Label>
                 <Form.Control type="email" placeholder="Email" name = "email" value = {email}  required onChange = {this.changeHandler}/>
             </Form.Group>
             <Form.Group controlId="formBasicNumber">
-                <Form.Label>Age</Form.Label>
-                <Form.Control type="number" placeholder="Age" name = "age" value = {age}  required onChange = {this.changeHandler}/>
+                <Form.Label><i>Age</i></Form.Label>
+                <Form.Control type="number" placeholder="Age" name = "age" value = {age}  required min= {0} onChange = {this.changeHandler}/>
             </Form.Group>
             <Button variant="primary" type="submit">
-                Submit
+                <i>Register</i>
             </Button>
         </Form>
         </div>

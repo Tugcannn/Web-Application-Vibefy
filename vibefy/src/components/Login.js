@@ -1,32 +1,49 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
 
-function Login() {
+class Login extends Component {
+    constructor(props)
+    {
+        super(props)
+        
+        this.state = {
+            username: '',
+            password: ''
+        }
+    }
 
-    return (
-        <div className="col-sm-12">
-            <Form>
-                <Form.Label>Username</Form.Label>
-                <Form.Control type="text" placeholder="Enter username" name="login-username"/>
-                <Form.Text className="text-muted">
-                    We'll never share your email with anyone else.
-                </Form.Text>
+    changeHandler = e => {
+        this.setState({[e.target.name]: e.target.value})
+    }
 
-                <Form.Group controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" />
+    submitHandler = e => {
+          e.preventDefault(
+          console.log(this.state)
+        )
+    }
+
+    render() {
+        const{username, password} = this.state
+        return (
+            <div className="col-sm-12">
+            <Form onSubmit = {this.submitHandler}>
+                <Form.Group controlId="formBasicText">
+                    <Form.Label><i>Username</i></Form.Label>
+                    <Form.Control type="text" placeholder="Enter username" name = "username" value = {username} required minLength = "5" onChange = {this.changeHandler}/>
                 </Form.Group>
-                <Form.Group controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
+                <Form.Group controlId="formBasicPassword">
+                    <Form.Label><i>Password</i></Form.Label>
+                    <Form.Control type="password" placeholder="Password" name = "password" value = {password}  required minLength = "8" onChange = {this.changeHandler}/>
                 </Form.Group>
                 <Button variant="primary" type="submit">
-                    Submit
-            </Button>
+                    <i>Login</i>
+                </Button>
             </Form>
-        </div>
-    );
+            </div>
+        );
+    }
 }
 
 export default Login;

@@ -6,19 +6,21 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 function Header() {
     return (
         <Navbar bg="dark" variant="dark">
-            <Navbar.Brand href="/home">VIBEFY</Navbar.Brand>
+            <Navbar.Brand href="/home"><i>VIBEFY</i></Navbar.Brand>
             <Nav className="mr-auto"></Nav>
             <Nav className="ms-auto">
                 <NavDropdown title="Moods" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="/happy">I am pretty very happpyyy!</NavDropdown.Item>
+                    <NavDropdown.Item href="/happy"><i>Happy</i></NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="/sad">Naa, I am so sad actually :/</NavDropdown.Item>
+                    <NavDropdown.Item href="/sad"><i>Sad</i></NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="/angry">I am angry, just play music</NavDropdown.Item>
+                    <NavDropdown.Item href="/angry"><i>Energetic</i></NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="/angry"><i>Angry</i></NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href="/home">Home</Nav.Link>
-                <Nav.Link href="/login">Login</Nav.Link>
-                <Nav.Link href="/register">Register</Nav.Link>
+                <Nav.Link href="/home"><i>Home</i></Nav.Link>
+                <Nav.Link href="/login"><i>Login</i></Nav.Link>
+                <Nav.Link href="/register"><i>Register</i></Nav.Link>
             </Nav>
         </Navbar>
     );
