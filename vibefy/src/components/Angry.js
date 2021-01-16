@@ -4,17 +4,11 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import CardContent from '@material-ui/core/CardContent';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
-import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
-import SkipNextIcon from '@material-ui/icons/SkipNext';
-
 import BillieEilish from '../../src/assets/images/png/billie-eilish.png';
 import Ghostemane from '../../src/assets/images/png/ghostemane.png';
 import Halsey from '../../src/assets/images/png/halsey.png';
 import Şanışer from '../../src/assets/images/png/saniser.png';
-
 import COPYCAT from '../../src/assets/musics/copycat.mp3';
 import Mercury from '../../src/assets/musics/mercury.mp3';
 import Nightmare from '../../src/assets/musics/nightmare.mp3';
@@ -41,6 +35,8 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft: theme.spacing(1),
       paddingBottom: theme.spacing(1),
     },
+    
+
     
   }));
 
@@ -69,7 +65,9 @@ function Angry() {
                     </div>
                     <CardMedia
                         className={classes.cover}
-                        image={BillieEilish}
+                        
+                        image={BillieEilish} 
+                        
                         title="Live from space album cover"
                     />
                 </Card>
@@ -93,6 +91,7 @@ function Angry() {
                     <CardMedia
                         className={classes.cover}
                         image={Ghostemane}
+                        
                         title="Live from space album cover"
                     />
                 </Card>
@@ -116,6 +115,7 @@ function Angry() {
                     <CardMedia
                         className={classes.cover}
                         image={Halsey}
+                        
                         title="Live from space album cover"
                     />
                 </Card>
@@ -139,6 +139,7 @@ function Angry() {
                     <CardMedia
                         className={classes.cover}
                         image= {Şanışer}
+                       
                         title="Live from space album cover"
                     />
                 </Card>
