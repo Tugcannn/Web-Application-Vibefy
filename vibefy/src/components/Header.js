@@ -14,7 +14,7 @@ function Header() {
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="/sad"><i>Sad</i></NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="/angry"><i>Energetic</i></NavDropdown.Item>
+                    <NavDropdown.Item href="/energetic"><i>Energetic</i></NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="/angry"><i>Angry</i></NavDropdown.Item>
                 </NavDropdown>

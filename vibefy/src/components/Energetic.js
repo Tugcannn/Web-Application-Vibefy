@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-function Angry() {
+function Energetic() {
 
     const classes = useStyles();
     const theme = useTheme();
@@ -47,10 +47,10 @@ function Angry() {
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                            COPYCAT
+                            Erik Dalı
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
-                            Billie Eilish
+                            Ömer Faruk Bostan
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
@@ -78,10 +78,10 @@ function Angry() {
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                            Mercury
+                            Witchcraft
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
-                            Ghostemane
+                            Pendulum
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
@@ -109,10 +109,10 @@ function Angry() {
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                            Nightmare
+                            We Could Be The Same
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
-                            Halsey
+                            Manga
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
@@ -140,10 +140,10 @@ function Angry() {
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                            Susamam
+                            New Rules
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
-                            Şanışer ft. Fuat, Ados...
+                            Dua Lipa
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
@@ -169,4 +169,4 @@ function Angry() {
     );
 }
 
-export default Angry;
+export default Energetic;

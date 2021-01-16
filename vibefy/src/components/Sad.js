@@ -8,8 +8,6 @@ import Typography from '@material-ui/core/Typography';
 import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import SkipNextIcon from '@material-ui/icons/SkipNext';
-import NativeSelectInput from '@material-ui/core/NativeSelect/NativeSelectInput';
-
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -167,7 +165,6 @@ function Sad() {
                     />
                 </Card>
             </div>
-
         </div>    
     );
 }

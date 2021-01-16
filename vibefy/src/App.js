@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Jumbo from "./components/Jumbo";
 import Happy from "./components/Happy";
 import Sad from "./components/Sad";
+import Energetic from "./components/Energetic";
 import Angry from "./components/Angry";
 import Login from './components/Login';
 import Register from './components/Register';
@@ -20,6 +21,7 @@ function App() {
           <Route path="/home" component={Jumbo} />
           <Route path="/happy" component={Happy} />
           <Route path="/sad" component={Sad} />
+          <Route path="/energetic" component={Energetic} />
           <Route path="/angry" component={Angry} />
           <Route path="/login" component={Login}/>
           <Route path="/register" component={Register}/>
