@@ -17,8 +17,8 @@ function Header() {
                     <NavDropdown.Item href="/angry">I am angry, just play music</NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link href="/home">Home</Nav.Link>
-                <Nav.Link href="#home">Login</Nav.Link>
-                <Nav.Link href="#features">Register</Nav.Link>
+                <Nav.Link href="/login">Login</Nav.Link>
+                <Nav.Link href="/register">Register</Nav.Link>
             </Nav>
         </Navbar>
     );
