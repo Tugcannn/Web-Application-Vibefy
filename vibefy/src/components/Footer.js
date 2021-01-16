@@ -21,8 +21,8 @@ function Footer() {
                         <h4>Developers</h4>
                         <ul className="list-unstyled">
                             <li>Tuna Tuncer</li>
-                            <li>Onur Alacam</li>
-                            <li>Uygar KAYA</li>
+                            <li>Onur Alaçam</li>
+                            <li>Uygar Kaya</li>
                             <li>Tuğcan Hoşer</li>
                         </ul>
                     </div>

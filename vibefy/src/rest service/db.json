@@ -1,0 +1,8 @@
+{
+    "users": [
+        { "username": "onur123", "password": "1234", "name":"onur", "email": "onur@gmail.com", "age": "21" },
+        { "username": "tucan412", "password": "1234", "name":"tucan", "email": "tucan@gmail.com", "age":"23" },
+        { "username": "tuna124", "password": "1234", "name":"tuna", "email": "tunatuncer@gmail.com","age": "21"},
+        { "username": "uygar31", "password": "1234", "name":"uygar", "email": "uygarkaya@gmail.com", "age":"21"}
+    ]
+}
