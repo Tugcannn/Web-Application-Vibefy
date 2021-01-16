@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactAudioPlayer from 'react-audio-player';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import CardContent from '@material-ui/core/CardContent';
 import Card from '@material-ui/core/Card';
@@ -8,6 +9,17 @@ import Typography from '@material-ui/core/Typography';
 import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import SkipNextIcon from '@material-ui/icons/SkipNext';
+
+import BillieEilish from '../../src/assets/images/png/billie-eilish.png';
+import Ghostemane from '../../src/assets/images/png/ghostemane.png';
+import Halsey from '../../src/assets/images/png/halsey.png';
+import Şanışer from '../../src/assets/images/png/saniser.png';
+
+import COPYCAT from '../../src/assets/musics/copycat.mp3';
+import Mercury from '../../src/assets/musics/mercury.mp3';
+import Nightmare from '../../src/assets/musics/nightmare.mp3';
+import Susamam from '../../src/assets/musics/susamam.mp3';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -29,10 +41,7 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft: theme.spacing(1),
       paddingBottom: theme.spacing(1),
     },
-    playIcon: {
-      height: 38,
-      width: 38,
-    },
+    
   }));
 
 function Angry() {
@@ -54,20 +63,13 @@ function Angry() {
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
-                            <IconButton aria-label="previous">
-                                {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
-                            </IconButton>
-                            <IconButton aria-label="play/pause">
-                                <PlayArrowIcon className={classes.playIcon} />
-                            </IconButton>
-                            <IconButton aria-label="next">
-                                {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
-                            </IconButton>
+                        <ReactAudioPlayer src={COPYCAT}  controls/>     
+                           
                         </div>
                     </div>
                     <CardMedia
                         className={classes.cover}
-                        image="/static/images/cards/live-from-space.jpg"
+                        image={BillieEilish}
                         title="Live from space album cover"
                     />
                 </Card>
@@ -85,20 +87,12 @@ function Angry() {
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
-                            <IconButton aria-label="previous">
-                                {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
-                            </IconButton>
-                            <IconButton aria-label="play/pause">
-                                <PlayArrowIcon className={classes.playIcon} />
-                            </IconButton>
-                            <IconButton aria-label="next">
-                                {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
-                            </IconButton>
+                        <ReactAudioPlayer src={Mercury}  controls/>     
                         </div>
                     </div>
                     <CardMedia
                         className={classes.cover}
-                        image="/static/images/cards/live-from-space.jpg"
+                        image={Ghostemane}
                         title="Live from space album cover"
                     />
                 </Card>
@@ -116,20 +110,12 @@ function Angry() {
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
-                            <IconButton aria-label="previous">
-                                {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
-                            </IconButton>
-                            <IconButton aria-label="play/pause">
-                                <PlayArrowIcon className={classes.playIcon} />
-                            </IconButton>
-                            <IconButton aria-label="next">
-                                {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
-                            </IconButton>
+                        <ReactAudioPlayer src={Nightmare}  controls/>     
                         </div>
                     </div>
                     <CardMedia
                         className={classes.cover}
-                        image="/static/images/cards/live-from-space.jpg"
+                        image={Halsey}
                         title="Live from space album cover"
                     />
                 </Card>
@@ -147,20 +133,12 @@ function Angry() {
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
-                            <IconButton aria-label="previous">
-                                {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
-                            </IconButton>
-                            <IconButton aria-label="play/pause">
-                                <PlayArrowIcon className={classes.playIcon} />
-                            </IconButton>
-                            <IconButton aria-label="next">
-                                {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
-                            </IconButton>
+                        <ReactAudioPlayer src={Susamam}  controls/>     
                         </div>
                     </div>
                     <CardMedia
                         className={classes.cover}
-                        image="/static/images/cards/live-from-space.jpg"
+                        image= {Şanışer}
                         title="Live from space album cover"
                     />
                 </Card>

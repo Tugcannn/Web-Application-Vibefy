@@ -40,7 +40,7 @@ function Footer() {
                 </div>
                 <div className="row">
                     <p className="col-sm-12">
-                    <i>Created By &copy;&nbsp;{new Date().getFullYear()} <i>VIBEFY</i> | All rights reserved</i> 
+                    <i>Created By <i>VIBEFY</i> &copy;&nbsp;{new Date().getFullYear()} | All rights reserved</i> 
                     </p>
                 </div>
             </div>
