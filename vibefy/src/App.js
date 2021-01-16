@@ -23,7 +23,7 @@ function App() {
           <Route path="/sad" component={Sad} />
           <Route path="/energetic" component={Energetic} />
           <Route path="/angry" component={Angry} />
-          <Route path="/login" component={Login}/>
+          <Route path='/login' component={Login}/>
           <Route path="/register" component={Register}/>
         </div>
       </Router>
