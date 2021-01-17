@@ -16,12 +16,24 @@ import WeCouldBeTheSame from '../../src/assets/musics/we could be the same.mp3';
 import NewRules from '../../src/assets/musics/NewRules.mp3';
 import Witchcraft from '../../src/assets/musics/Witchcraft.mp3';
 
+const cardStyle = {
+    padding: '5vh',
+    backgroundColor: '#56FF00',
+    borderRadius: '20px',
+    margin: '5px'
+}; 
+
+const background = {
+    backgroundColor: '#2E2E2E'
+}
+
+
 function Energetic() {
-    
+
     return (
-        <div className="card-group">
-            <div className="col-sm-3">
-                <Card className="root">
+        <div className="card-group" style={background}>
+            <div className="col-sm-6">
+                <Card className="root" style={cardStyle}>
                     <div className="details">
                         <CardContent className="content">
                             <Typography component="h5" variant="h5">
@@ -43,8 +55,8 @@ function Energetic() {
                 </Card>
             </div>
 
-            <div className="col-sm-3">
-                <Card className="root">
+            <div className="col-sm-6">
+                <Card className="root" style={cardStyle}>
                     <div className="details">
                         <CardContent className="content">
                             <Typography component="h5" variant="h5">
@@ -66,8 +78,8 @@ function Energetic() {
                 </Card>
             </div>
 
-            <div className="col-sm-3">
-                <Card className="root">
+            <div className="col-sm-6">
+                <Card className="root" style={cardStyle}>
                     <div className="details">
                         <CardContent className="content">
                             <Typography component="h5" variant="h5">
@@ -89,8 +101,8 @@ function Energetic() {
                 </Card>
             </div>
 
-            <div className="col-sm-3">
-                <Card className="root">
+            <div className="col-sm-6">
+                <Card className="root" style={cardStyle}>
                     <div className="details">
                         <CardContent className="content">
                             <Typography component="h5" variant="h5">

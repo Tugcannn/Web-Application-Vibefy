@@ -16,12 +16,24 @@ import happyx from '../../src/assets/musics/happy.mp4';
 import EteğiBelinde from '../../src/assets/musics/etegibelinde.mp4';
 import Aya from '../../src/assets/musics/aya.mp4';
 
+const cardStyle = {
+    padding: '5vh',
+    backgroundColor: '#FCFF00',
+    borderRadius: '20px',
+    margin: '5px'
+}; 
+
+const background = {
+    backgroundColor: '#2E2E2E'
+}
+
+
 function Happy() {
 
     return (
-        <div className="card-group">
-            <div className="col-sm-3">
-                <Card className="root">
+        <div className="card-group" style={background}>
+            <div className="col-sm-6">
+                <Card className="root" style={cardStyle}>
                     <div className="details">
                         <CardContent className="content">
                             <Typography component="h5" variant="h5">
@@ -43,8 +55,8 @@ function Happy() {
                 </Card>
             </div>
 
-            <div className="col-sm-3">
-                <Card className="root">
+            <div className="col-sm-6">
+                <Card className="root" style={cardStyle}>
                     <div className="details">
                         <CardContent className="content">
                             <Typography component="h5" variant="h5">
@@ -65,9 +77,9 @@ function Happy() {
                     />
                 </Card>
             </div>
-
-            <div className="col-sm-3">
-                <Card className="root">
+            
+            <div className="col-sm-6">
+                <Card className="root" style={cardStyle}>
                     <div className="details">
                         <CardContent className="content">
                             <Typography component="h5" variant="h5">
@@ -88,9 +100,9 @@ function Happy() {
                     />
                 </Card>
             </div>
-
-            <div className="col-sm-3">
-                <Card className="root">
+            
+            <div className="col-sm-6">
+                <Card className="root" style={cardStyle}>
                     <div className="details">
                         <CardContent className="content">
                             <Typography component="h5" variant="h5">

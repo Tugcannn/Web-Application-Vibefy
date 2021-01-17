@@ -9,7 +9,7 @@ import Angry from "./components/Angry";
 import Login from './components/Login';
 import Register from './components/Register';
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route} from 'react-router-dom'
 
 class App extends Component
 {

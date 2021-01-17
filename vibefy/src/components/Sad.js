@@ -16,12 +16,24 @@ import odamkirec from '../../src/assets/musics/odamkirec.mp3';
 import nilüfer from '../../src/assets/musics/nilüfer.mp3';
 import denizüstüköpürür from '../../src/assets/musics/denizüstüköpürür.mp3';
 
+
+const cardStyle = {
+    padding: '5vh',
+    backgroundColor: '#00E2FF',
+    borderRadius: '20px',
+    margin: '5px'
+}; 
+
+const background = {
+    backgroundColor: '#2E2E2E'
+}
+
 function Sad() {
 
     return (
-        <div className="card-group">
-            <div className="col-sm-3">
-                <Card className="root">
+        <div className="card-group" style={background}>
+            <div className="col-sm-6">
+                <Card className="root" style={cardStyle}>
                     <div className="details">
                         <CardContent className="content">
                             <Typography component="h5" variant="h5">
@@ -43,8 +55,8 @@ function Sad() {
                 </Card>
             </div>
 
-            <div className="col-sm-3">
-                <Card className="root">
+            <div className="col-sm-6">
+                <Card className="root" style={cardStyle}>
                     <div className="details">
                         <CardContent className="content">
                             <Typography component="h5" variant="h5">
@@ -66,8 +78,8 @@ function Sad() {
                 </Card>
             </div>
 
-            <div className="col-sm-3">
-                <Card className="root">
+            <div className="col-sm-6">
+                <Card className="root" style={cardStyle}>
                     <div className="details">
                         <CardContent className="content">
                             <Typography component="h5" variant="h5">
@@ -89,8 +101,8 @@ function Sad() {
                 </Card>
             </div>
 
-            <div className="col-sm-3">
-                <Card className="root">
+            <div className="col-sm-6">
+                <Card className="root" style={cardStyle}>
                     <div className="details">
                         <CardContent className="content">
                             <Typography component="h5" variant="h5">

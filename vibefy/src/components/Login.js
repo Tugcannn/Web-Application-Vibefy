@@ -53,7 +53,7 @@ class Login extends React.Component {
             <Form onSubmit = {this.submitHandler}>
                 <Form.Group controlId="formBasicText">
                     <Form.Label><i>Username</i></Form.Label>
-                    <Form.Control type="text" placeholder="Enter username" name = "username" value = {username} required minLength = "5" onChange = {this.changeHandler}/>
+                    <Form.Control type="text" placeholder="Enter username" name = "username" value = {username} required onChange = {this.changeHandler}/>
                 </Form.Group>
                 <Form.Group controlId="formBasicPassword">
                     <Form.Label><i>Password</i></Form.Label>

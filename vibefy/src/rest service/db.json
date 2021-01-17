@@ -3,7 +3,7 @@
     {
       "id": "1",
       "username": "onur123",
-      "password": "1234",
+      "password": "12345678",
       "name": "onur",
       "email": "onur@gmail.com",
       "age": "21"
@@ -11,7 +11,7 @@
     {
       "id": "2",
       "username": "tucan412",
-      "password": "1234",
+      "password": "12345678",
       "name": "tucan",
       "email": "tucan@gmail.com",
       "age": "23"
@@ -19,15 +19,15 @@
     {
       "id": "3",
       "username": "tuna124",
-      "password": "1234",
+      "password": "12345678",
       "name": "tuna",
       "email": "tunatuncer@gmail.com",
       "age": "21"
     },
     {
       "id": "4",
-      "username": "uygar31",
-      "password": "1234",
+      "username": "uygar12",
+      "password": "12345678",
       "name": "uygar",
       "email": "uygarkaya@gmail.com",
       "age": "21"
@@ -63,6 +63,14 @@
       "email": "sdasdsa@gmail.com",
       "age": "22",
       "id": "TV02aUF"
+    },
+    {
+      "username": "emin",
+      "password": "12345678",
+      "name": "sadıkhov",
+      "email": "emin@gmail.com",
+      "age": "21",
+      "id": "1RNuYUn"
     }
   ]
 }

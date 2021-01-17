@@ -20,7 +20,7 @@ class Header extends React.Component
                 <NavLink to="/home" className="btn" style={{color: 'white'}}><i>VIBEFY</i></NavLink>
                 <Nav className="mr-auto"><HeadsetIcon className="headphone"></HeadsetIcon></Nav>
                 <Nav className="ms-auto">
-                    <NavDropdown title="Moods" id="basic-nav-dropdown" style={{color: 'white'}}>
+                    <NavDropdown title="MOODS" id="basic-nav-dropdown" style={{color: 'white'}}>
                         <NavLink to="/happy" className="btn" style={{color: 'black'}}><i>Happy</i></NavLink>
                         <NavDropdown.Divider />
                         <NavLink to="/sad" className="btn" style={{color: 'black'}}><i>Sad</i></NavLink>
