@@ -16,8 +16,15 @@ import WeCouldBeTheSame from '../../src/assets/musics/we could be the same.mp3';
 import NewRules from '../../src/assets/musics/NewRules.mp3';
 import Witchcraft from '../../src/assets/musics/Witchcraft.mp3';
 
+<<<<<<< HEAD
 function Energetic() {
 
+=======
+
+function Energetic() {
+
+   
+>>>>>>> fb876c84c00c7bf5cf543c9ee7068f26907919f7
     return (
         <div className="card-group">
             <div className="col-sm-3">

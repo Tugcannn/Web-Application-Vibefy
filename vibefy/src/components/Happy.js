@@ -16,6 +16,10 @@ import happyx from '../../src/assets/musics/happy.mp4';
 import EteğiBelinde from '../../src/assets/musics/etegibelinde.mp4';
 import Aya from '../../src/assets/musics/aya.mp4';
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> fb876c84c00c7bf5cf543c9ee7068f26907919f7
 function Happy() {
 
     return (
