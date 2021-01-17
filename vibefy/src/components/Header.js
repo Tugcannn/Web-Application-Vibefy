@@ -3,31 +3,36 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import HeadsetIcon from '@material-ui/icons/Headset';
+import { NavLink } from 'react-router-dom'
 import '../App.css';
 
 class Header extends React.Component
 {
-    constructor(props) { super(props) }
+    constructor(props)
+    {
+        super(props);
+    }
+
 
     render()
     {
         return (
             <Navbar bg="dark" variant="dark">
-                <Navbar.Brand href="/home"><i>VIBEFY</i></Navbar.Brand>
+                <NavLink to="/home" className="btn" style={{color: 'white'}}><i>VIBEFY</i></NavLink>
                 <Nav className="mr-auto"><HeadsetIcon className="headphone"></HeadsetIcon></Nav>
                 <Nav className="ms-auto">
-                    <NavDropdown title="Moods" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="/happy"><i>Happy</i></NavDropdown.Item>
+                    <NavDropdown title="Moods" id="basic-nav-dropdown" style={{color: 'white'}}>
+                        <NavLink to="/happy" className="btn" style={{color: 'black'}}><i>Happy</i></NavLink>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item href="/sad"><i>Sad</i></NavDropdown.Item>
+                        <NavLink to="/sad" className="btn" style={{color: 'black'}}><i>Sad</i></NavLink>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item href="/energetic"><i>Energetic</i></NavDropdown.Item>
+                        <NavLink to="/energetic" className="btn" style={{color: 'black'}}><i>Energetic</i></NavLink>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item href="/angry"><i>Angry</i></NavDropdown.Item>
+                        <NavLink to="/angry" className="btn" style={{color: 'black'}}><i>Angry</i></NavLink>
                     </NavDropdown>
-                    <Nav.Link href="/home"><i>Home</i></Nav.Link>
-                    <Nav.Link href="/login"><i>Login</i></Nav.Link>
-                    <Nav.Link href="/register"><i>Register</i></Nav.Link>
+                    <NavLink to="/home" className="btn" style={{color: 'white'}}>Home</NavLink>
+                    {this.props.loggedInStatus == "NOT_LOGGED_IN" ? <><NavLink to="/login" className="btn" style={{color: 'white'}}>Login</NavLink>
+                    <NavLink to="/register" className="btn" style={{color: 'white'}}>Register</NavLink></> : null}
                 </Nav>
             </Navbar>
         );
