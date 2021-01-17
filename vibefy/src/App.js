@@ -17,6 +17,7 @@ class App extends Component
     super(props);
 
     this.handleSuccessfulLogin = this.handleSuccessfulLogin.bind(this);
+    this.handleLogout = this.handleLogout.bind(this);
 
     this.state = {
       loggedInStatus: "NOT_LOGGED_IN"
@@ -29,12 +30,18 @@ class App extends Component
     })
   }
 
+  handleLogout(){
+    this.setState({
+      loggedInStatus : "NOT_LOGGED_IN"
+    })
+  }
+
   render(){
     return (
       <div className="page-container">
         
         <Router>
-        <Header loggedInStatus={this.state.loggedInStatus}/>
+        <Header loggedInStatus={this.state.loggedInStatus} handleLogout={this.handleLogout}/>
           <div className="content-wrap">
             <Route path="/" exact 
             render = {props => (
