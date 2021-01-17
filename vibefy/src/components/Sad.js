@@ -11,7 +11,6 @@ import Cem_Karaca from '../../src/assets/images/png/Cem_Karaca.jpg';
 import muslumgurses from '../../src/assets/images/png/muslumgurses.jpg';
 import paul_dwyer from '../../src/assets/images/png/paul_dwyer.jpg';
 
-
 import herkesaynihayatta from '../../src/assets/musics/herkesaynihayatta.mp3';
 import odamkirec from '../../src/assets/musics/odamkirec.mp3';
 import nilüfer from '../../src/assets/musics/nilüfer.mp3';
