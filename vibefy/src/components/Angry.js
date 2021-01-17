@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import ReactAudioPlayer from 'react-audio-player';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import CardContent from '@material-ui/core/CardContent';
@@ -44,7 +44,8 @@ const useStyles = makeStyles((theme) => ({
     
   }));
 
-function Angry() {
+
+function Angry(props) {
 
     const classes = useStyles();
     const theme = useTheme();

@@ -36,8 +36,10 @@ class Login extends React.Component {
                 if(response.data[i].username == this.state.username && response.data[i].password == this.state.password)
                     value++;
             }
-            if(value == 1)
+            if(value == 1){
+                this.props.handleSuccessfulLogin();
                 this.props.history.push('/')
+            }
             else
                 document.getElementById("1").removeAttribute("hidden")   
     })
