@@ -1,6 +1,6 @@
 import React from 'react'
+import './Page.css';
 import ReactAudioPlayer from 'react-audio-player';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
 import CardContent from '@material-ui/core/CardContent';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -16,38 +16,16 @@ import WeCouldBeTheSame from '../../src/assets/musics/we could be the same.mp3';
 import NewRules from '../../src/assets/musics/NewRules.mp3';
 import Witchcraft from '../../src/assets/musics/Witchcraft.mp3';
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-      display: 'flex',
-    },
-    details: {
-      display: 'flex',
-      flexDirection: 'column',
-    },
-    content: {
-      flex: '1 0 auto',
-    },
-    cover: {
-      width: 151,
-    },
-    controls: {
-      display: 'flex',
-      alignItems: 'center',
-      paddingLeft: theme.spacing(1),
-      paddingBottom: theme.spacing(1),
-    },
-}));
 
 function Energetic() {
 
-    const classes = useStyles();
-
+   
     return (
         <div className="card-group">
             <div className="col-sm-3">
-                <Card className={classes.root}>
-                    <div className={classes.details}>
-                        <CardContent className={classes.content}>
+                <Card className="root">
+                    <div className="details">
+                        <CardContent className="content">
                             <Typography component="h5" variant="h5">
                             <i>Erik Dalı</i>
                             </Typography>
@@ -55,12 +33,12 @@ function Energetic() {
                             <i>Ömer Faruk Bostan</i>
                             </Typography>
                         </CardContent>
-                        <div className={classes.controls}>
+                        <div className="controls">
                         <ReactAudioPlayer src={ErikDali}  controls/>  
                         </div>
                     </div>
                     <CardMedia
-                        className={classes.cover}
+                        className="cover"
                         image= {ÖmerFarukBostan}
                         title="Erik Dalı"
                     />
@@ -68,9 +46,9 @@ function Energetic() {
             </div>
 
             <div className="col-sm-3">
-                <Card className={classes.root}>
-                    <div className={classes.details}>
-                        <CardContent className={classes.content}>
+                <Card className="root">
+                    <div className="details">
+                        <CardContent className="content">
                             <Typography component="h5" variant="h5">
                             <i>Witchcraft</i>
                             </Typography>
@@ -78,12 +56,12 @@ function Energetic() {
                             <i>Pendulum</i>
                             </Typography>
                         </CardContent>
-                        <div className={classes.controls}>
+                        <div className="controls">
                         <ReactAudioPlayer src={Witchcraft}  controls/>  
                         </div>
                     </div>
                     <CardMedia
-                        className={classes.cover}
+                        className="cover"
                         image= {Pendulum}
                         title="Witchcraft"
                     />
@@ -91,9 +69,9 @@ function Energetic() {
             </div>
 
             <div className="col-sm-3">
-                <Card className={classes.root}>
-                    <div className={classes.details}>
-                        <CardContent className={classes.content}>
+                <Card className="root">
+                    <div className="details">
+                        <CardContent className="content">
                             <Typography component="h5" variant="h5">
                             <i>We Could Be The Same</i>
                             </Typography>
@@ -101,12 +79,12 @@ function Energetic() {
                             <i>Manga</i>
                             </Typography>
                         </CardContent>
-                        <div className={classes.controls}>
+                        <div className="controls">
                         <ReactAudioPlayer src={WeCouldBeTheSame}  controls/>  
                         </div>
                     </div>
                     <CardMedia
-                        className={classes.cover}
+                        className="cover"
                         image= {Manga}
                         title="We Could Be The Same"
                     />
@@ -114,9 +92,9 @@ function Energetic() {
             </div>
 
             <div className="col-sm-3">
-                <Card className={classes.root}>
-                    <div className={classes.details}>
-                        <CardContent className={classes.content}>
+                <Card className="root">
+                    <div className="details">
+                        <CardContent className="content">
                             <Typography component="h5" variant="h5">
                             <i>New Rules</i>
                             </Typography>
@@ -124,12 +102,12 @@ function Energetic() {
                             <i>Dua Lipa</i>
                             </Typography>
                         </CardContent>
-                        <div className={classes.controls}>
+                        <div className="controls">
                         <ReactAudioPlayer src={NewRules}  controls/>  
                         </div>
                     </div>
                     <CardMedia
-                        className={classes.cover}
+                        className="cover"
                         image= {DuaLipa}
                         title="New Rules"
                     />

@@ -1,12 +1,10 @@
 import React from 'react' 
 import './Page.css';
 import ReactAudioPlayer from 'react-audio-player';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
 import CardContent from '@material-ui/core/CardContent';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-
 
 import Macklemore from '../../src/assets/images/png/Macklemore.jpg';
 import PharrellWilliams from '../../src/assets/images/png/pharrell_williams.jpg';
@@ -18,31 +16,8 @@ import happyx from '../../src/assets/musics/happy.mp4';
 import EteğiBelinde from '../../src/assets/musics/etegibelinde.mp4';
 import Aya from '../../src/assets/musics/aya.mp4';
 
-// const useStyles = makeStyles((theme) => ({
-//     root: {
-//       display: 'flex',
-//     },
-//     details: {
-//       display: 'flex',
-//       flexDirection: 'column',
-//     },
-//     content: {
-//       flex: '1 0 auto',
-//     },
-//     cover: {
-//       width: 150,
-//     },
-//     controls: {
-//       display: 'flex',
-//       alignItems: 'center',
-//       paddingLeft: theme.spacing(1),
-//       paddingBottom: theme.spacing(1),
-//     },
-// }));
 
 function Happy() {
-
-    // const classes = useStyles();
 
     return (
        
