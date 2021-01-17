@@ -4,22 +4,15 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import CardContent from '@material-ui/core/CardContent';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
-import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
-import SkipNextIcon from '@material-ui/icons/SkipNext';
-
 import BillieEilish from '../../src/assets/images/png/billie-eilish.png';
 import Ghostemane from '../../src/assets/images/png/ghostemane.png';
 import Halsey from '../../src/assets/images/png/halsey.png';
 import Şanışer from '../../src/assets/images/png/saniser.png';
-
 import COPYCAT from '../../src/assets/musics/copycat.mp3';
 import Mercury from '../../src/assets/musics/mercury.mp3';
 import Nightmare from '../../src/assets/musics/nightmare.mp3';
 import Susamam from '../../src/assets/musics/susamam.mp3';
-
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -41,37 +34,34 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft: theme.spacing(1),
       paddingBottom: theme.spacing(1),
     },
-    
-  }));
+}));
 
 
 function Angry(props) {
 
     const classes = useStyles();
-    const theme = useTheme();
 
     return (
-        <div className="row">
+        <div className="card-group">
             <div className="col-sm-3">
                 <Card className={classes.root}>
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                            COPYCAT
+                            <i>COPYCAT</i>
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
-                            Billie Eilish
+                            <i>Billie Eilish</i>
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
                         <ReactAudioPlayer src={COPYCAT}  controls/>     
-                           
                         </div>
                     </div>
                     <CardMedia
                         className={classes.cover}
-                        image={BillieEilish}
-                        title="Live from space album cover"
+                        image={BillieEilish} 
+                        title="COPYCAT"
                     />
                 </Card>
             </div>
@@ -81,10 +71,10 @@ function Angry(props) {
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                            Mercury
+                            <i>Mercury</i>
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
-                            Ghostemane
+                            <i>Ghostemane</i>
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
@@ -94,7 +84,7 @@ function Angry(props) {
                     <CardMedia
                         className={classes.cover}
                         image={Ghostemane}
-                        title="Live from space album cover"
+                        title="Mercury"
                     />
                 </Card>
             </div>
@@ -104,10 +94,10 @@ function Angry(props) {
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                            Nightmare
+                            <i>Nightmare</i>
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
-                            Halsey
+                            <i>Halsey</i>
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
@@ -117,7 +107,7 @@ function Angry(props) {
                     <CardMedia
                         className={classes.cover}
                         image={Halsey}
-                        title="Live from space album cover"
+                        title="Nightmare"
                     />
                 </Card>
             </div>
@@ -127,10 +117,10 @@ function Angry(props) {
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                            Susamam
+                            <i>Susamam</i>
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
-                            Şanışer ft. Fuat, Ados...
+                            <i>Şanışer ft. Fuat, Ados...</i>
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
@@ -140,7 +130,7 @@ function Angry(props) {
                     <CardMedia
                         className={classes.cover}
                         image= {Şanışer}
-                        title="Live from space album cover"
+                        title="Susamam"
                     />
                 </Card>
             </div>

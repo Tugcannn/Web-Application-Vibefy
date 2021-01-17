@@ -1,14 +1,12 @@
 import React from 'react'
+// import './Page.css';
 import ReactAudioPlayer from 'react-audio-player';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import CardContent from '@material-ui/core/CardContent';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
-import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
-import SkipNextIcon from '@material-ui/icons/SkipNext';
+
 
 import Macklemore from '../../src/assets/images/png/Macklemore.jpg';
 import PharrellWilliams from '../../src/assets/images/png/pharrell_williams.jpg';
@@ -19,7 +17,6 @@ import Cant from '../../src/assets/musics/cantholdus.mp4';
 import happyx from '../../src/assets/musics/happy.mp4';
 import EteğiBelinde from '../../src/assets/musics/etegibelinde.mp4';
 import Aya from '../../src/assets/musics/aya.mp4';
-
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -41,25 +38,24 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft: theme.spacing(1),
       paddingBottom: theme.spacing(1),
     },
-   
-  }));
+}));
 
 function Happy() {
 
     const classes = useStyles();
-    const theme = useTheme();
 
     return (
-        <div className="row">
+       
+        <div className="card-group">
             <div className="col-sm-3">
                 <Card className={classes.root}>
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                            Can't Hold Us 
+                            <i>Can't Hold Us</i>
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
-                            Macklemore and Ryan Lewis
+                            <i>Macklemore and Ryan Lewis</i>
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
@@ -69,7 +65,7 @@ function Happy() {
                     <CardMedia
                         className={classes.cover}
                         image= {Macklemore}
-                        title="Live from space album cover"
+                        title="Can't Hold Us"
                     />
                 </Card>
             </div>
@@ -79,10 +75,10 @@ function Happy() {
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                            Happy
+                            <i>Happy</i>
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
-                            Pharrell Williams
+                            <i>Pharrell Williams</i>
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
@@ -92,7 +88,7 @@ function Happy() {
                     <CardMedia
                         className={classes.cover}
                         image= {PharrellWilliams}
-                        title="Live from space album cover"
+                        title="Happy"
                     />
                 </Card>
             </div>
@@ -102,10 +98,10 @@ function Happy() {
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                            Eteği Belinde
+                            <i>Eteği Belinde</i>
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
-                            Manuş Baba
+                            <i>Manuş Baba</i>
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
@@ -115,7 +111,7 @@ function Happy() {
                     <CardMedia
                         className={classes.cover}
                         image= {ManuşBaba}
-                        title="Live from space album cover"
+                        title="Eteği Belinde"
                     />
                 </Card>
             </div>
@@ -125,10 +121,10 @@ function Happy() {
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                            AYA
+                            <i>AYA</i>
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
-                            Murda and Ezhel
+                            <i>Murda and Ezhel</i>
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
@@ -138,11 +134,11 @@ function Happy() {
                     <CardMedia
                         className={classes.cover}
                         image= {MurdaandEzhel}
-                        title="Live from space album cover"
+                        title="AYA"
                     />
                 </Card>
             </div>
-        </div>    
+        </div>   
     );
 }
 
