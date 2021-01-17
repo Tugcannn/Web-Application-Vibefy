@@ -5,6 +5,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+
 import ÖmerFarukBostan from '../../src/assets/images/png/ömer faruk bostan.jpg';
 import Manga from '../../src/assets/images/png/manga.jpg';
 import DuaLipa from '../../src/assets/images/png/dua lipa.jpg';
@@ -14,8 +15,6 @@ import ErikDali from '../../src/assets/musics/erikdali.mp3';
 import WeCouldBeTheSame from '../../src/assets/musics/we could be the same.mp3';
 import NewRules from '../../src/assets/musics/NewRules.mp3';
 import Witchcraft from '../../src/assets/musics/Witchcraft.mp3';
-
-
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -37,25 +36,23 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft: theme.spacing(1),
       paddingBottom: theme.spacing(1),
     },
-   
-  }));
+}));
 
 function Energetic() {
 
     const classes = useStyles();
-    const theme = useTheme();
 
     return (
-        <div className="row">
+        <div className="card-group">
             <div className="col-sm-3">
                 <Card className={classes.root}>
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                            Erik Dalı
+                            <i>Erik Dalı</i>
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
-                            Ömer Faruk Bostan
+                            <i>Ömer Faruk Bostan</i>
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
@@ -65,7 +62,7 @@ function Energetic() {
                     <CardMedia
                         className={classes.cover}
                         image= {ÖmerFarukBostan}
-                        title="Live from space album cover"
+                        title="Erik Dalı"
                     />
                 </Card>
             </div>
@@ -75,10 +72,10 @@ function Energetic() {
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                            Witchcraft
+                            <i>Witchcraft</i>
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
-                            Pendulum
+                            <i>Pendulum</i>
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
@@ -88,7 +85,7 @@ function Energetic() {
                     <CardMedia
                         className={classes.cover}
                         image= {Pendulum}
-                        title="Live from space album cover"
+                        title="Witchcraft"
                     />
                 </Card>
             </div>
@@ -98,10 +95,10 @@ function Energetic() {
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                            We Could Be The Same
+                            <i>We Could Be The Same</i>
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
-                            Manga
+                            <i>Manga</i>
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
@@ -111,7 +108,7 @@ function Energetic() {
                     <CardMedia
                         className={classes.cover}
                         image= {Manga}
-                        title="Live from space album cover"
+                        title="We Could Be The Same"
                     />
                 </Card>
             </div>
@@ -121,10 +118,10 @@ function Energetic() {
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                            New Rules
+                            <i>New Rules</i>
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
-                            Dua Lipa
+                            <i>Dua Lipa</i>
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
@@ -134,7 +131,7 @@ function Energetic() {
                     <CardMedia
                         className={classes.cover}
                         image= {DuaLipa}
-                        title="Live from space album cover"
+                        title="New Rules"
                     />
                 </Card>
             </div>

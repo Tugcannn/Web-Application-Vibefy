@@ -14,7 +14,6 @@ import Mercury from '../../src/assets/musics/mercury.mp3';
 import Nightmare from '../../src/assets/musics/nightmare.mp3';
 import Susamam from '../../src/assets/musics/susamam.mp3';
 
-
 const useStyles = makeStyles((theme) => ({
     root: {
       display: 'flex',
@@ -35,40 +34,33 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft: theme.spacing(1),
       paddingBottom: theme.spacing(1),
     },
-    
-
-    
-  }));
+}));
 
 function Angry() {
 
     const classes = useStyles();
-    const theme = useTheme();
 
     return (
-        <div className="row">
+        <div className="card-group">
             <div className="col-sm-3">
                 <Card className={classes.root}>
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                            COPYCAT
+                            <i>COPYCAT</i>
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
-                            Billie Eilish
+                            <i>Billie Eilish</i>
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
                         <ReactAudioPlayer src={COPYCAT}  controls/>     
-                           
                         </div>
                     </div>
                     <CardMedia
                         className={classes.cover}
-                        
                         image={BillieEilish} 
-                        
-                        title="Live from space album cover"
+                        title="COPYCAT"
                     />
                 </Card>
             </div>
@@ -78,10 +70,10 @@ function Angry() {
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                            Mercury
+                            <i>Mercury</i>
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
-                            Ghostemane
+                            <i>Ghostemane</i>
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
@@ -91,8 +83,7 @@ function Angry() {
                     <CardMedia
                         className={classes.cover}
                         image={Ghostemane}
-                        
-                        title="Live from space album cover"
+                        title="Mercury"
                     />
                 </Card>
             </div>
@@ -102,10 +93,10 @@ function Angry() {
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                            Nightmare
+                            <i>Nightmare</i>
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
-                            Halsey
+                            <i>Halsey</i>
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
@@ -115,8 +106,7 @@ function Angry() {
                     <CardMedia
                         className={classes.cover}
                         image={Halsey}
-                        
-                        title="Live from space album cover"
+                        title="Nightmare"
                     />
                 </Card>
             </div>
@@ -126,10 +116,10 @@ function Angry() {
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                            Susamam
+                            <i>Susamam</i>
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
-                            Şanışer ft. Fuat, Ados...
+                            <i>Şanışer ft. Fuat, Ados...</i>
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
@@ -139,8 +129,7 @@ function Angry() {
                     <CardMedia
                         className={classes.cover}
                         image= {Şanışer}
-                       
-                        title="Live from space album cover"
+                        title="Susamam"
                     />
                 </Card>
             </div>

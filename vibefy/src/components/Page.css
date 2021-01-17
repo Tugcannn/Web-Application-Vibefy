@@ -1,0 +1,23 @@
+/* @media screen and (max-width: 768px) {
+    .root {
+        display: flex;
+    }
+
+    details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    content {
+        flex: 1 0 auto;
+    }
+
+    cover {
+        width: 151;
+    }
+
+    controls {
+        display: flex;
+        align-items: center;
+    }
+} */

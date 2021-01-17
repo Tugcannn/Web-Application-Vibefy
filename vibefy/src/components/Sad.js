@@ -4,11 +4,7 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import CardContent from '@material-ui/core/CardContent';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
-import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
-import SkipNextIcon from '@material-ui/icons/SkipNext';
 
 import mehmeterdem from '../../src/assets/images/png/mehmet-erdem.jpg';
 import Cem_Karaca from '../../src/assets/images/png/Cem_Karaca.jpg';
@@ -46,34 +42,29 @@ const useStyles = makeStyles((theme) => ({
 
 function Sad() {
 
-
     const classes = useStyles();
-    const theme = useTheme();
 
     return (
-        <div className="row">
+        <div className="card-group">
             <div className="col-sm-3">
                 <Card className={classes.root}>
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                                Herkes Aynı Hayatta
+                                <i>Herkes Aynı Hayatta</i>
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
-                                Mehmet Erdem
+                                <i>Mehmet Erdem</i>
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
-                           
                         <ReactAudioPlayer src={herkesaynihayatta}  controls/>     
-                           
                         </div>
                     </div>
                     <CardMedia
                         className={classes.cover}
-
                         image={mehmeterdem}
-                        title="Live from space album cover"
+                        title="Herkes Aynı Hayatta"
                     />
                 </Card>
             </div>
@@ -83,10 +74,10 @@ function Sad() {
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                                Odam Kireç Tutmuyor
+                                <i>Odam Kireç Tutmuyor</i>
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
-                                Cem Karaca
+                                <i>Cem Karaca</i>
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
@@ -96,7 +87,7 @@ function Sad() {
                     <CardMedia
                         className={classes.cover}
                         image={Cem_Karaca}
-                        title="Live from space album cover"
+                        title="Odam Kireç Tutmuyor"
                     />
                 </Card>
             </div>
@@ -106,10 +97,10 @@ function Sad() {
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                                Nilüfer
+                                <i>Nilüfer</i>
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
-                                Müslüm Gürses
+                                <i>Müslüm Gürses</i>
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>
@@ -119,7 +110,7 @@ function Sad() {
                     <CardMedia
                         className={classes.cover}
                         image={muslumgurses}
-                        title="Live from space album cover"
+                        title="Nilüfer"
                     />
                 </Card>
             </div>
@@ -129,10 +120,10 @@ function Sad() {
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                                Deniz Üstü Köpürür
+                                <i>Deniz Üstü Köpürür</i>
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
-                                Paul Dwyer
+                                <i>Paul Dwyer</i>
                             </Typography>
                         </CardContent>
                         <div className={classes.controls}>                                        
@@ -142,8 +133,7 @@ function Sad() {
                     <CardMedia
                         className={classes.cover}
                         image={paul_dwyer}
-                       
-                        title="Live from space album cover"
+                        title="Deniz Üstü Köpürür"
                     />
                 </Card>
             </div>
