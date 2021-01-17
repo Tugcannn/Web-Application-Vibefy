@@ -1,5 +1,5 @@
-import React from 'react'
-// import './Page.css';
+import React from 'react' 
+import './Page.css';
 import ReactAudioPlayer from 'react-audio-player';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import CardContent from '@material-ui/core/CardContent';
@@ -18,39 +18,39 @@ import happyx from '../../src/assets/musics/happy.mp4';
 import EteğiBelinde from '../../src/assets/musics/etegibelinde.mp4';
 import Aya from '../../src/assets/musics/aya.mp4';
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-      display: 'flex',
-    },
-    details: {
-      display: 'flex',
-      flexDirection: 'column',
-    },
-    content: {
-      flex: '1 0 auto',
-    },
-    cover: {
-      width: 150,
-    },
-    controls: {
-      display: 'flex',
-      alignItems: 'center',
-      paddingLeft: theme.spacing(1),
-      paddingBottom: theme.spacing(1),
-    },
-}));
+// const useStyles = makeStyles((theme) => ({
+//     root: {
+//       display: 'flex',
+//     },
+//     details: {
+//       display: 'flex',
+//       flexDirection: 'column',
+//     },
+//     content: {
+//       flex: '1 0 auto',
+//     },
+//     cover: {
+//       width: 150,
+//     },
+//     controls: {
+//       display: 'flex',
+//       alignItems: 'center',
+//       paddingLeft: theme.spacing(1),
+//       paddingBottom: theme.spacing(1),
+//     },
+// }));
 
 function Happy() {
 
-    const classes = useStyles();
+    // const classes = useStyles();
 
     return (
        
         <div className="card-group">
             <div className="col-sm-3">
-                <Card className={classes.root}>
-                    <div className={classes.details}>
-                        <CardContent className={classes.content}>
+                <Card className="root">
+                    <div className="details">
+                        <CardContent className="content">
                             <Typography component="h5" variant="h5">
                             <i>Can't Hold Us</i>
                             </Typography>
@@ -58,12 +58,12 @@ function Happy() {
                             <i>Macklemore and Ryan Lewis</i>
                             </Typography>
                         </CardContent>
-                        <div className={classes.controls}>
+                        <div className="controls">
                         <ReactAudioPlayer src={Cant}  controls/>     
                         </div>
                     </div>
                     <CardMedia
-                        className={classes.cover}
+                        className="cover"
                         image= {Macklemore}
                         title="Can't Hold Us"
                     />
@@ -71,9 +71,9 @@ function Happy() {
             </div>
 
             <div className="col-sm-3">
-                <Card className={classes.root}>
-                    <div className={classes.details}>
-                        <CardContent className={classes.content}>
+                <Card className="root">
+                    <div className="details">
+                        <CardContent className="content">
                             <Typography component="h5" variant="h5">
                             <i>Happy</i>
                             </Typography>
@@ -81,12 +81,12 @@ function Happy() {
                             <i>Pharrell Williams</i>
                             </Typography>
                         </CardContent>
-                        <div className={classes.controls}>
+                        <div className="controls">
                         <ReactAudioPlayer src={happyx}  controls/>     
                         </div>
                     </div>
                     <CardMedia
-                        className={classes.cover}
+                        className="cover"
                         image= {PharrellWilliams}
                         title="Happy"
                     />
@@ -94,9 +94,9 @@ function Happy() {
             </div>
 
             <div className="col-sm-3">
-                <Card className={classes.root}>
-                    <div className={classes.details}>
-                        <CardContent className={classes.content}>
+                <Card className="root">
+                    <div className="details">
+                        <CardContent className="content">
                             <Typography component="h5" variant="h5">
                             <i>Eteği Belinde</i>
                             </Typography>
@@ -104,12 +104,12 @@ function Happy() {
                             <i>Manuş Baba</i>
                             </Typography>
                         </CardContent>
-                        <div className={classes.controls}>
+                        <div className="controls">
                         <ReactAudioPlayer src={EteğiBelinde}  controls/>     
                         </div>
                     </div>
                     <CardMedia
-                        className={classes.cover}
+                        className="cover"
                         image= {ManuşBaba}
                         title="Eteği Belinde"
                     />
@@ -117,9 +117,9 @@ function Happy() {
             </div>
 
             <div className="col-sm-3">
-                <Card className={classes.root}>
-                    <div className={classes.details}>
-                        <CardContent className={classes.content}>
+                <Card className="root">
+                    <div className="details">
+                        <CardContent className="content">
                             <Typography component="h5" variant="h5">
                             <i>AYA</i>
                             </Typography>
@@ -127,12 +127,12 @@ function Happy() {
                             <i>Murda and Ezhel</i>
                             </Typography>
                         </CardContent>
-                        <div className={classes.controls}>
+                        <div className="controls">
                         <ReactAudioPlayer src={Aya}  controls/>     
                         </div>
                     </div>
                     <CardMedia
-                        className={classes.cover}
+                        className="cover"
                         image= {MurdaandEzhel}
                         title="AYA"
                     />

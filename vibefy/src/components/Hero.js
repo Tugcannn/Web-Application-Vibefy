@@ -1,6 +1,6 @@
 import React from 'react';
-
 import './Hero.css';
+
 import video from '../../src/assets/videos/video-1.mp4';
 function Hero() {
   return (
