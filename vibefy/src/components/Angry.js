@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
+import './Page.css';
 import ReactAudioPlayer from 'react-audio-player';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
 import CardContent from '@material-ui/core/CardContent';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -14,39 +14,14 @@ import Mercury from '../../src/assets/musics/mercury.mp3';
 import Nightmare from '../../src/assets/musics/nightmare.mp3';
 import Susamam from '../../src/assets/musics/susamam.mp3';
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-      display: 'flex',
-    },
-    details: {
-      display: 'flex',
-      flexDirection: 'column',
-    },
-    content: {
-      flex: '1 0 auto',
-    },
-    cover: {
-      width: 151,
-    },
-    controls: {
-      display: 'flex',
-      alignItems: 'center',
-      paddingLeft: theme.spacing(1),
-      paddingBottom: theme.spacing(1),
-    },
-}));
-
-
 function Angry(props) {
-
-    const classes = useStyles();
 
     return (
         <div className="card-group">
             <div className="col-sm-3">
-                <Card className={classes.root}>
-                    <div className={classes.details}>
-                        <CardContent className={classes.content}>
+                <Card className="root">
+                    <div className="details">
+                        <CardContent className="content">
                             <Typography component="h5" variant="h5">
                             <i>COPYCAT</i>
                             </Typography>
@@ -54,12 +29,12 @@ function Angry(props) {
                             <i>Billie Eilish</i>
                             </Typography>
                         </CardContent>
-                        <div className={classes.controls}>
+                        <div className="controls">
                         <ReactAudioPlayer src={COPYCAT}  controls/>     
                         </div>
                     </div>
                     <CardMedia
-                        className={classes.cover}
+                        className="cover"
                         image={BillieEilish} 
                         title="COPYCAT"
                     />
@@ -67,9 +42,9 @@ function Angry(props) {
             </div>
 
             <div className="col-sm-3">
-                <Card className={classes.root}>
-                    <div className={classes.details}>
-                        <CardContent className={classes.content}>
+                <Card className="root">
+                    <div className="details">
+                        <CardContent className="content">
                             <Typography component="h5" variant="h5">
                             <i>Mercury</i>
                             </Typography>
@@ -77,12 +52,12 @@ function Angry(props) {
                             <i>Ghostemane</i>
                             </Typography>
                         </CardContent>
-                        <div className={classes.controls}>
+                        <div className="controls">
                         <ReactAudioPlayer src={Mercury}  controls/>     
                         </div>
                     </div>
                     <CardMedia
-                        className={classes.cover}
+                        className="cover"
                         image={Ghostemane}
                         title="Mercury"
                     />
@@ -90,9 +65,9 @@ function Angry(props) {
             </div>
 
             <div className="col-sm-3">
-                <Card className={classes.root}>
-                    <div className={classes.details}>
-                        <CardContent className={classes.content}>
+                <Card className="root">
+                    <div className="details">
+                        <CardContent className="content">
                             <Typography component="h5" variant="h5">
                             <i>Nightmare</i>
                             </Typography>
@@ -100,12 +75,12 @@ function Angry(props) {
                             <i>Halsey</i>
                             </Typography>
                         </CardContent>
-                        <div className={classes.controls}>
+                        <div className="controls">
                         <ReactAudioPlayer src={Nightmare}  controls/>     
                         </div>
                     </div>
                     <CardMedia
-                        className={classes.cover}
+                        className="cover"
                         image={Halsey}
                         title="Nightmare"
                     />
@@ -113,9 +88,9 @@ function Angry(props) {
             </div>
 
             <div className="col-sm-3">
-                <Card className={classes.root}>
-                    <div className={classes.details}>
-                        <CardContent className={classes.content}>
+                <Card className="root">
+                    <div className="details">
+                        <CardContent className="content">
                             <Typography component="h5" variant="h5">
                             <i>Susamam</i>
                             </Typography>
@@ -123,12 +98,12 @@ function Angry(props) {
                             <i>Şanışer ft. Fuat, Ados...</i>
                             </Typography>
                         </CardContent>
-                        <div className={classes.controls}>
+                        <div className="controls">
                         <ReactAudioPlayer src={Susamam}  controls/>     
                         </div>
                     </div>
                     <CardMedia
-                        className={classes.cover}
+                        className="cover"
                         image= {Şanışer}
                         title="Susamam"
                     />
