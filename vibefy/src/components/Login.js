@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import axios from 'axios'
@@ -33,10 +33,10 @@ class Login extends React.Component {
             var value = 0;
             for(var i = 0; i<response.data.length;i++)
             {
-                if(response.data[i].username == this.state.username && response.data[i].password == this.state.password)
+                if(response.data[i].username === this.state.username && response.data[i].password === this.state.password)
                     value++;
             }
-            if(value == 1){
+            if(value === 1){
                 this.props.handleSuccessfulLogin();
                 this.props.history.push('/')
             }

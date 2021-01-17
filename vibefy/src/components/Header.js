@@ -31,7 +31,7 @@ class Header extends React.Component
                     </NavDropdown>
                     <NavLink to="/home" className="btn" style={{color: 'white'}}>Home</NavLink>
                     {
-                    this.props.loggedInStatus == "NOT_LOGGED_IN" 
+                    this.props.loggedInStatus === "NOT_LOGGED_IN" 
                     ? <><NavLink to="/login" className="btn" style={{color: 'white'}}>Login</NavLink>
                     <NavLink to="/register" className="btn" style={{color: 'white'}}>Register</NavLink></> 
                     : null

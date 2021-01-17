@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import axios from 'axios'
@@ -36,10 +36,10 @@ class Register extends React.Component {
             var value = 0;
             for(var i = 0; i<response.data.length;i++)
             {
-                if(response.data[i].username == this.state.username)
+                if(response.data[i].username === this.state.username)
                     value++;
             }
-            if(value == 0)
+            if(value === 0)
             {
                 axios({
                     method: 'post',

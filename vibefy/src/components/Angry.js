@@ -1,14 +1,16 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Page.css';
 import ReactAudioPlayer from 'react-audio-player';
 import CardContent from '@material-ui/core/CardContent';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+
 import BillieEilish from '../../src/assets/images/png/billie-eilish.png';
 import Ghostemane from '../../src/assets/images/png/ghostemane.png';
 import Halsey from '../../src/assets/images/png/halsey.png';
 import Şanışer from '../../src/assets/images/png/saniser.png';
+
 import COPYCAT from '../../src/assets/musics/copycat.mp3';
 import Mercury from '../../src/assets/musics/mercury.mp3';
 import Nightmare from '../../src/assets/musics/nightmare.mp3';
