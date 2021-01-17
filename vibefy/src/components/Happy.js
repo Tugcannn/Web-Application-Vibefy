@@ -17,7 +17,7 @@ import EteğiBelinde from '../../src/assets/musics/etegibelinde.mp4';
 import Aya from '../../src/assets/musics/aya.mp4';
 
 const cardStyle = {
-    padding: '5vh',
+    padding: '10vh',
     backgroundColor: '#FCFF00',
     borderRadius: '20px',
     margin: '5px'

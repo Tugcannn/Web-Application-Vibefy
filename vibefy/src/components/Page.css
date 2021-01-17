@@ -1,5 +1,7 @@
 .root {
     display: flex;
+    
+    
 }
 
 .details {
@@ -15,6 +17,7 @@
     display: flex;
     width: 100%;
     height: auto;
+
 }
 
 .controls {
@@ -27,3 +30,5 @@
         width: 100%;
     } 
 }
+  
+

@@ -18,7 +18,7 @@ import Susamam from '../../src/assets/musics/susamam.mp3';
 
 
 const cardStyle = {
-    padding: '5vh',
+    padding: '10vh',
     backgroundColor: '#FF9E9E',
     borderRadius: '20px',
     margin: '5px'

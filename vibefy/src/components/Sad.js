@@ -18,14 +18,15 @@ import denizüstüköpürür from '../../src/assets/musics/denizüstüköpürür
 
 
 const cardStyle = {
-    padding: '5vh',
-    backgroundColor: '#00E2FF',
+    padding: '10vh',
+    backgroundColor: '#00E2FF',  
     borderRadius: '20px',
     margin: '5px'
 }; 
 
 const background = {
-    backgroundColor: '#2E2E2E'
+    backgroundColor: '#2E2E2E',
+    
 }
 
 function Sad() {

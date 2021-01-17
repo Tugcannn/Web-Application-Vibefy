@@ -17,7 +17,7 @@ import NewRules from '../../src/assets/musics/NewRules.mp3';
 import Witchcraft from '../../src/assets/musics/Witchcraft.mp3';
 
 const cardStyle = {
-    padding: '5vh',
+    padding: '10vh',
     backgroundColor: '#56FF00',
     borderRadius: '20px',
     margin: '5px'
