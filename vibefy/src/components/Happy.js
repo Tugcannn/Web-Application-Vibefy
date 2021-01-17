@@ -42,7 +42,7 @@ import Aya from '../../src/assets/musics/aya.mp4';
 
 function Happy() {
 
-    const classes = useStyles();
+    // const classes = useStyles();
 
     return (
        
