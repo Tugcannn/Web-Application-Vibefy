@@ -1,23 +1,32 @@
-/* @media screen and (max-width: 768px) {
+
     .root {
         display: flex;
     }
 
-    details {
+    .details {
         display: flex;
         flex-direction: column;
     }
 
-    content {
+    .content {
         flex: 1 0 auto;
     }
 
-    cover {
-        width: 151;
+    .cover {
+        display: flex;
+        width: 100%;
+        height: auto;
     }
 
-    controls {
+    .controls {
         display: flex;
         align-items: center;
     }
-} */
+
+     @media only screen and (max-width: 960px) { 
+        .details{
+            width: 100%;
+        } 
+    }  
+
+ 
